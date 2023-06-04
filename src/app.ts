@@ -17,6 +17,10 @@ app.get("/status", (req: Request, res: Response) => {
     })
 })
 
+app.get("/qrcode", (req: Request, res: Response) => {
+    res.sendFile(__dirname + "/qrcode.html")
+})
+
 app.post("/send", async (req: Request, res: Response) => {   
     const { number, message } = req.body
     
