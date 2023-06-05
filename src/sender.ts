@@ -64,7 +64,7 @@ class Sender {
 
         create("teste1", qr, status)
         .then((client) => start(client))
-        .catch((error) => console.error("Deu erro" + error))
+        .catch((error) => console.error("Ocorreu um erro ao realizar a comunicação com whatsapp web: " + error))
     }
 }
 

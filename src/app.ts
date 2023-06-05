@@ -10,6 +10,8 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
+app.use(express.static("src"));
+
 app.get("/status", (req: Request, res: Response) => {
     return res.send({
         qr_code: sender.qrCode,

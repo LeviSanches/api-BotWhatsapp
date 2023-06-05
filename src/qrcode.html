@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>         
+        <img src="public/images/logo-siseven.png" alt="">  
+    </header>
+    <main>
+        <section>
+            <article>
+                <span>Clique no botão abaixo para gerar o QR Code</span>
+                <button onclick="mostrarQrCode()">Gerar QR Code</button>                 
+                <div id="qrcode">
+                    <img src="https://www.pexels.com/pt-br/foto/slack-logo-430205/" alt="">  
+                </div>
+            </article>
+        </section>
+    </main>  
     <script>        
         async function mostrarQrCode() {
             try {
@@ -14,41 +32,13 @@
                 const dados = console.log(data.qr_code.base64Qr)
                 const button = document.getElementsByTagName("button");
                 const qrcode = document.getElementById("qrcode");
-
                 
-                qrcode.innerHTML = `<img src="${qrCode}" alt="">`;
+                qrcode.innerHTML = `<img src="${qrCode}" alt=""> 
+                                    <span>Conecte o seu aparelho lendo o qr-code acima</span>`;
             } catch (error) {
                 console.log("Erro ao realizar requisição HTTP: " + error)
             }  
         }
-    </script>
-    <style>
-        :root {
-            --azul1: #365078;
-            --cinza1: #4C4F61; 
-            --cinza2: #BABABA;
-            --azul2: #020B38;
-            --cinza3: #F5F5F5;  
-        }
-
-        #content {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-    <title>Document</title>
-</head>
-<body>
-    <div id="content">
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <button onclick="mostrarQrCode()">Gerar QR-Code</button>
-            <div id="qrcode">
-        
-            </div>
-        </div>
-    </div>
+    </script>      
 </body>
 </html>
