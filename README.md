@@ -21,9 +21,9 @@ Ou baixe os arquivos zip.
 3. Inicie o projeto: <br>
 ```npm run dev```
 
-4. **Uso**: Para utilizar o projeto é bastante simples, a primeira vez que for iniciar o projeto, vai ser exibido no terminal o QRcode para fazer a conexão do aparelho que deseja enviar as mensagens.
 
 ## Uso
+Para utilizar o projeto é bastante simples, a primeira vez que for iniciar o projeto, vai ser exibido no terminal o QRcode para fazer a conexão do aparelho que deseja enviar as mensagens.
 Após realizar com sucesso, basta enviar uma solicitação POST na rota "/send" utilizando os parâmetros number e message.
 ```javascript
 app.post("/send", async (req: Request, res: Response) => {   
