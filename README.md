@@ -1,5 +1,6 @@
 # API para automatizar o envio de mensagens
 API para envio de mensagem para whatsapp que criei para implementar em uma aplicação.
+<img src="https://images.pexels.com/photos/4132538/pexels-photo-4132538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Texto alternativo" width="500">
 
 ## Índice
 
