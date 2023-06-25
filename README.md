@@ -12,7 +12,7 @@ API para envio de mensagem para whatsapp que criei para implementar em uma aplic
 1. Clone o repositório:
 
 ```bash
-https://github.com/LeviSanches/api-BotWhatsapp.git
+git clone https://github.com/LeviSanches/api-BotWhatsapp.git
 ```
 Ou baixe os arquivos zip.
 
